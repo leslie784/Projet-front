@@ -1,4 +1,4 @@
-# Site web - Front
+# Site web - Front de Leslie
 
 ## Processus d'installation (NodeJs, npm, Angular CLI):
 

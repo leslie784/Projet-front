@@ -1,0 +1,26 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <span (click)="goHome()"><img class="logo" src="/assets/logo yncrea.png" /></span>
+    </nav>
+</div>
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-2 ">
+        <img src="/assets/paysagiste.jpg" />
+    </div>
+    <div class="col-sm-8 col-sm-offset-2"> 
+        <div class="container">
+            <div class="content-header" >
+            </div>
+            <button type="button" class="btn btn-primary mr-1" [routerLink]="['/rate-service']">Rate a service</button>
+          
+                  <ng2-smart-table  class="table table-hover"
+                                    [settings]="settings"
+                                    [source]="data"
+                                    (custom)="onView($event)">
+          
+                  </ng2-smart-table>
+          
+          </div>
+    </div>
+</div>

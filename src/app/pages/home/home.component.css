@@ -1,0 +1,13 @@
+
+div{
+  text-align: center;
+}
+
+.dashboard {
+  font-weight: bold;
+  font-size: 40px;
+  height: 3em;
+  line-height: 3em;
+  background-color: #253746;
+  color: #f7f6f3;
+}

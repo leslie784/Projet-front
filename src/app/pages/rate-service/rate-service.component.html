@@ -1,0 +1,48 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <span (click)="goHome()"><img class="logo" src="/assets/logo yncrea.png" /></span>
+    </nav>
+</div>
+
+<div class="container bloc">
+	<div class="row">
+		<div class="col-sm-7 col-sm-offset-2 formAddUser">
+            <p class="card-text"><strong>Rate a service you were offered ! </strong></p>
+		  <p class="card-text"><code><strong>* Required</strong></code></p>
+		  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+			<div class="form-group">
+			  <label for="serviceName">
+				Name of the service
+				&nbsp;<code><strong>*</strong></code>
+			  </label>
+			  <input required type="text" id="serviceName" class="form-control" name="serviceName" ngModel>
+			</div>
+			<div class="form-group">
+			  <label for="mark">
+				Mark the service
+				&nbsp;<code><strong>*</strong></code>
+			  </label>
+			  <input required type="text" id="mark" class="form-control" name="mark" ngModel>
+			</div>
+			<div class="form-group">
+			  <label for="worker">
+				Who performed the service
+				&nbsp;<code><strong>*</strong></code>
+			  </label>
+			  <input required type="text" id="worker" class="form-control" name="worker" ngModel>
+			</div>
+            <div class="form-group">
+                <label for="comment">
+                  What did you think about the service ?
+                  &nbsp;<code><strong>*</strong></code>
+                </label>
+                <input required type="text" id="comment" class="form-control" name="comment" ngModel>
+              </div>
+			<button class="btn btn-success" type="submit">Submit</button>
+			<small id="help" class="form-text text-muted" *ngIf="f.invalid">Please fill the required fields.</small>
+		  </form>
+		</div>
+		<div class="col-sm-5 col-sm-offset-2"> 
+			<img class="logo" src="/assets/maconneries.jpg" />
+		</div>
+	</div>
